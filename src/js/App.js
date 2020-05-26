@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header'
 import Box from './Box'
 import Boxes from '../json/Boxes.json'
+import Footer from './Footer'
 
 function App() {
 
@@ -13,7 +14,10 @@ function App() {
    
     <div>
       <Header  title = 'Pizza love' />
-       {boxes}
+      <main>
+        {boxes}
+      </main>
+      <Footer />
     </div>
   );
 }

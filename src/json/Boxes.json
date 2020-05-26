@@ -6,5 +6,9 @@
     {
         "name":"It's very easy",
         "background":"test"
+    },
+    {
+        "name":"Pick some things",
+        "background":"test"
     }
 ]
