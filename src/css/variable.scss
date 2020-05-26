@@ -1,0 +1,16 @@
+$colors:(
+    'primary': #c3a080,
+    'primary_lighter': #fdcca4,
+    'second': #231f20,
+);
+$paddings:(
+    '15':15px
+);
+
+@function getColor($color){
+    @return map-get($colors , $color);
+}
+
+@function getPadding($padding){
+    @return map-get($paddings , $padding);
+}
