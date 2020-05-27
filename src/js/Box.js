@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Box( props ){
-    console.log(props);
+   
     return (
         <section>
             <div className="box">
