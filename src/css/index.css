@@ -81,17 +81,23 @@ body section {
   scroll-snap-align: start;
 }
 
-body .box {
+body section .box {
   width: 100vw;
   height: 100vh;
   position: relative;
+  background: #ccc;
 }
 
-body .box__name {
+body section .box__name {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
+}
+
+body section:nth-of-type(2n) .box {
+  background: #123;
+  color: #fff;
 }
 /*# sourceMappingURL=index.css.map */
