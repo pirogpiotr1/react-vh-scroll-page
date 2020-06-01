@@ -1,4 +1,8 @@
 import React from 'react';
+import {
+    NavLink
+  } from "react-router-dom";
+  
 
 function Header(props){
     return (
@@ -6,9 +10,9 @@ function Header(props){
             <h1>{props.title}</h1>
             <nav>
                 <ul>
-                    <li><a href={'/contact'}>Contact</a></li>
-                    <li><a href={'/blog'}>Blog</a></li>
-                    <li><a href={'/configurator'}>PIZZA CONFIGURATOR</a></li>
+                    <li><NavLink to="/" exact activeClassName="selected" >Home</NavLink></li>
+                    <li><NavLink to="/blog" exact activeClassName="selected" >Blog</NavLink></li>
+                    <li><NavLink to="/configurator" exact activeClassName="selected" >Pizza creator</NavLink></li>
                 </ul>
             </nav>
         </header>  
